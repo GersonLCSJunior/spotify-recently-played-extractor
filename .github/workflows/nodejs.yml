@@ -29,3 +29,5 @@ jobs:
     - run: yarn test
       env:
         CI: true
+        APPLICATION_KEY: ${{ secrets.APPLICATION_KEY }}
+        REFRESH_TOKEN: ${{ secrets.REFRESH_TOKEN }}
