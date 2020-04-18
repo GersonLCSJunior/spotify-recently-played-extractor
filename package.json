@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "deploy": "aws lambda update-function-code --function-name spotify-recently-played-extractor --zip-file fileb://build.zip --publish --profile pessoal"
   },
   "repository": {
     "type": "git",
@@ -22,6 +23,7 @@
     "jest": "^25.3.0"
   },
   "dependencies": {
+    "request": "^2.88.2",
     "request-promise": "^4.2.5"
   }
 }
