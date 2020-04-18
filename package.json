@@ -1,0 +1,19 @@
+{
+  "name": "spotify-recently-played-extractor",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GersonLCSJunior/spotify-recently-played-extractor.git"
+  },
+  "author": "Gerson Junior",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GersonLCSJunior/spotify-recently-played-extractor/issues"
+  },
+  "homepage": "https://github.com/GersonLCSJunior/spotify-recently-played-extractor#readme"
+}
