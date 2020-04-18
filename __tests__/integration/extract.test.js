@@ -2,8 +2,8 @@ require('dotenv/config');
 const APPLICATION_KEY = process.env.APPLICATION_KEY;
 const REFRESH_TOKEN = process.env.REFRESH_TOKEN;
 
-const { getToken } = require('../../src/authController');
-const { getRecentlyPlayed } = require('../../src/extractController');
+const { getToken } = require('../../src/controllers/authController');
+const { getRecentlyPlayed } = require('../../src/controllers/extractController');
 
 describe('Extract', () => {
     it('should return a list of 50 musics', async () => {

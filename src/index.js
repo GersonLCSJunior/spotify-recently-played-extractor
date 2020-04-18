@@ -4,8 +4,8 @@ const REFRESH_TOKEN = process.env.REFRESH_TOKEN;
 const AWS = require('aws-sdk');
 const S3 = new AWS.S3();
 
-const { getToken } = require('./src/authController');
-const { getRecentlyPlayed } = require('./src/extractController');
+const { getToken } = require('./controllers/authController');
+const { getRecentlyPlayed } = require('./controllers/extractController');
 
 exports.handler = async () => {
     const access_token = await getToken({APPLICATION_KEY, REFRESH_TOKEN});
