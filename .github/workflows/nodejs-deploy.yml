@@ -28,9 +28,9 @@ jobs:
     - run: yarn build
     - name: lambda-deploy
       uses: appleboy/lambda-action@master
-        with:
-          aws_access_key_id: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          aws_secret_access_key: ${{ secrets.AWS_SECRET_KEY }}
-          aws_region: ${{ secrets.AWS_REGION }}
-          function_name: spotify-recently-played-extractor
-          zip_file: build.zip
+      with:
+        aws_access_key_id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        aws_secret_access_key: ${{ secrets.AWS_SECRET_KEY }}
+        aws_region: ${{ secrets.AWS_REGION }}
+        function_name: spotify-recently-played-extractor
+        zip_file: build.zip
