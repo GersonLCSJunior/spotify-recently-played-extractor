@@ -5,6 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
+    "prebuild": "yarn install --production",
+    "build": "zip build.zip . -x build.zip -r",
     "deploy": "aws lambda update-function-code --function-name spotify-recently-played-extractor --zip-file fileb://build.zip --publish --profile pessoal"
   },
   "repository": {
